@@ -98,6 +98,8 @@ public class ENSideMenu : NSObject {
     
         animator = UIDynamicAnimator(referenceView:sourceView)
         
+        /*
+    
         // Add right swipe gesture recognizer
         let rightSwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: "handleGesture:")
         rightSwipeGestureRecognizer.direction =  UISwipeGestureRecognizerDirection.Right
@@ -115,6 +117,7 @@ public class ENSideMenu : NSObject {
             sideMenuContainerView.addGestureRecognizer(rightSwipeGestureRecognizer)
             sourceView.addGestureRecognizer(leftSwipeGestureRecognizer)
         }
+        */
         
     }
 
@@ -153,6 +156,7 @@ public class ENSideMenu : NSObject {
         sideMenuContainerView.layer.shadowPath = UIBezierPath(rect: sideMenuContainerView.bounds).CGPath
         
         sourceView.addSubview(sideMenuContainerView)
+        
         
         if (NSClassFromString("UIVisualEffectView") != nil) {
             // Add blur view
