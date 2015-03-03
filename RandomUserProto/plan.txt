@@ -1,0 +1,22 @@
+1. Add Welcome page.
+2. Side menu option on top left of navigation bar.
+3. Side menu (table view), display list of contacts with their photo and name
+4. #233D4D for background, 	# D5DFE6 for the text.
+5. design web service to retrieve data from url - http://devzone.ipedis.com/burgermenu/contact.json
+6. Contact -> Show details menu with phone number, description, big photo, name.
+7. Detail menu, #FFFFFF for background and #515151 for text.
+8. The app has to work offline and online.
+
+Thirdparty framework
+
+https://github.com/evnaz/ENSwiftSideMenu
+
+Referenced Pages
+
+1. http://www.objc.io/issue-10/networked-core-data-application.html
+
+todo
+----
+
+1. Fix the tableview navigation (occurs sometimes)
+2. Check initial data loading
