@@ -66,7 +66,6 @@
 		486D9A2B1AA3733100416EB0 /* FrontViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrontViewController.swift; sourceTree = "<group>"; };
 		48E0B4181AA39245002EAA61 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
 		48E0B4191AA39245002EAA61 /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@2x.png"; sourceTree = "<group>"; };
-		48E0B41D1AA5483C002EAA61 /* RandomUserProto-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RandomUserProto-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +118,6 @@
 		4835692E1AA3617A0036ABCC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				48E0B4201AA54856002EAA61 /* Bridge */,
 				483569741AA362E40036ABCC /* Resources */,
 				4835692F1AA3617A0036ABCC /* Info.plist */,
 			);
@@ -237,14 +235,6 @@
 				48E0B4191AA39245002EAA61 /* menu@2x.png */,
 			);
 			name = icons;
-			sourceTree = "<group>";
-		};
-		48E0B4201AA54856002EAA61 /* Bridge */ = {
-			isa = PBXGroup;
-			children = (
-				48E0B41D1AA5483C002EAA61 /* RandomUserProto-Bridging-Header.h */,
-			);
-			name = Bridge;
 			sourceTree = "<group>";
 		};
 		48E0B4231AA54B41002EAA61 /* SideBarNavigation */ = {
@@ -501,7 +491,7 @@
 				INFOPLIST_FILE = RandomUserProto/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "RandomUserProto/RandomUserProto-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -515,7 +505,7 @@
 				INFOPLIST_FILE = RandomUserProto/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "RandomUserProto/RandomUserProto-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};
