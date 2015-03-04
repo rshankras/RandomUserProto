@@ -27,6 +27,7 @@ class SidebarNavigationController: ENSideMenuNavigationController, ENSideMenuDel
     func loadSideMenu() {
         sideMenu = ENSideMenu(sourceView: self.view, menuTableViewController: ContactsViewController(), menuPosition:.Left)
         sideMenu?.menuWidth = 260.0
+        sideMenu?.swipeGestureEnabled = false
         view.bringSubviewToFront(navigationBar)
     }
 }
