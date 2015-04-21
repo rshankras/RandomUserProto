@@ -83,7 +83,7 @@ class DataImporter: NSObject {
         }
         
         if (result.last != nil) {
-            return result.last as RandomUserEntity
+            return result.last as! RandomUserEntity
         } else {
             let entityDescripition = NSEntityDescription.entityForName("RandomUserEntity", inManagedObjectContext: self.context)
             let randomUser = RandomUserEntity(entity: entityDescripition!, insertIntoManagedObjectContext: self.context)

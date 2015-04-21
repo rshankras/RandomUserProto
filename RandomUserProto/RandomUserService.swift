@@ -39,7 +39,7 @@ public class RandomUserService: NSObject {
             if let results: NSArray = NSJSONSerialization .JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments  , error: errorPointer) as? NSArray {
 
                     for data in results {
-                        profiles.append(self.populateData(data as NSDictionary))
+                        profiles.append(self.populateData(data as! NSDictionary))
                     }
                     
                     completion(profiles)

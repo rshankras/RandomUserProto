@@ -60,7 +60,7 @@ class ContactsViewController: UITableViewController, NSFetchedResultsControllerD
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main",bundle: nil)
-        var detailViewController : ProfileDetailViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ProfileDetailView") as ProfileDetailViewController
+        var detailViewController : ProfileDetailViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ProfileDetailView") as! ProfileDetailViewController
         if let randomUser = fetchedResultController.objectAtIndexPath(indexPath) as? RandomUserEntity {
             detailViewController.userDetail = randomUser
         }
@@ -142,7 +142,9 @@ class ContactsViewController: UITableViewController, NSFetchedResultsControllerD
     }
     
     func importFinished() {
-        tableView.reloadData()
+        dispatch_async(dispatch_get_main_queue(), { () -> Void in
+            self.tableView.reloadData()
+        })
     }
 }
 
